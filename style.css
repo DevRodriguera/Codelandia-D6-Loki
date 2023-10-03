@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --brand-color-yellow: #FFA800;
+    --brand-color-blue: #0072D2;
+    --dark-10: #131318;
+    --dark-20: #FFFFFF;
+    --support-01: #2962FF;
+    --support-02: #0BB07B;
+    --support-03: #FFCE52;
+    --support-04: #F03D3D;
+    --support-05: #E0E0E0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-style: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    /* border: black solid; */
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(#000000bb,#000000bb), url(assets/bg-img.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-family: 'B612', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    font-family: 'B612', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 267px;
+    column-gap: 20px;
+}
+
+.content > img {
+    width: 184px;
+    height: 267px;
+}
+
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.about p {
+    width: 60vw;
+    font-family: B612;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.about-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+}
+
+#time {
+    font-family: B612;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+h4 {
+    font-family: B612;
+    font-size: 1.2rem;
+}
+
+button {
+    display: inline flex;
+    font-family: 'Open-sans', sans-serif;
+    align-items: flex-start;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px 30px;
+}
+
+#btn-now {
+    padding: 15px 27px;
+    background-color: var(--brand-color-blue);
+}
+
+#btn-trailer {
+    padding: 15px 25px;
+    background-color: var(--dark-10);
+    border: 1px solid #FFF;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .content > img {
+        display: none;
+    }
+}

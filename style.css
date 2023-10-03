@@ -107,7 +107,6 @@ ul {
     content: "\2606";
     color: var(--dark-20);
     font-size: 3rem;
-
 }
 
 #time {
@@ -154,7 +153,34 @@ button {
 
 
 @media screen and (max-width: 1024px) {
+
+    .container {
+        gap: 10px 0px;
+    }
+
+    .content {
+        padding-top: 0px;
+    }
+
+    .about {
+        align-items: center;
+        gap: 30px 0px;
+    }
+
+    .about p {
+        width: 90vw;
+    }
+
+    .about-content {
+        justify-content: center;
+        gap: 0px 40px;
+    }
+
     .content > img {
         display: none;
+    }
+
+    .star-icon::before {
+        font-size: 1.5rem;
     }
 }

@@ -35,6 +35,7 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    gap: 30px 0px;
 }
 
 .subtitle {
@@ -58,6 +59,7 @@ body {
     justify-content: center;
     height: 267px;
     column-gap: 20px;
+    padding-top: 80px;
 }
 
 .content > img {
@@ -86,6 +88,26 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 60vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.star-icon.ativo::before{
+    cursor: pointer;
+    content: "\2605";
+    color: var(--brand-color-yellow);
+}
+
+.star-icon::before {
+    cursor: pointer;
+    content: "\2606";
+    color: var(--dark-20);
+    font-size: 3rem;
+
 }
 
 #time {
@@ -119,12 +141,15 @@ button {
 #btn-now {
     padding: 15px 27px;
     background-color: var(--brand-color-blue);
+    border: none;
+    cursor: pointer;
 }
 
 #btn-trailer {
     padding: 15px 25px;
     background-color: var(--dark-10);
     border: 1px solid #FFF;
+    cursor: pointer;
 }
 
 
